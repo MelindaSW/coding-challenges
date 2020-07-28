@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// https://open.kattis.com/problems/dicegame
+
 public class DiceGame {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -10,4 +12,3 @@ public class DiceGame {
         scanner.close();
     }
 }
-// https://open.kattis.com/problems/dicegame
