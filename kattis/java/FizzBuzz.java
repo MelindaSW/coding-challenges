@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+// https://open.kattis.com/problems/fizzbuzz
 public class FizzBuzz {
   public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);

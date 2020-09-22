@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
-
+// https://open.kattis.com/problems/modulo
 public class Modulo {
   public static void main(String[] args) {
     // For each row of input do input modulo 42. Add the result to a set. When done print the lenght of the set.
