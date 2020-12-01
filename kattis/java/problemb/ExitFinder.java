@@ -1,4 +1,4 @@
-package sigma.problemb;
+package problemb;
 
 import java.util.Scanner;
 

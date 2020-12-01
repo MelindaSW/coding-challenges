@@ -5,12 +5,12 @@ function updateInventory(curInv, newInv) {
   let length = inv.length - 1
   let i = 0
   while (i < length) {
-      let curItm = inv[i][1]
-      let nextItm = inv[i + 1][1]
+    let curItm = inv[i][1]
+    let nextItm = inv[i + 1][1]
     if (curItm === nextItm) {
-        let curAmnt = inv[i][0]
-        let newAmnt = inv[i + 1][0]
-      inv.push([curAmnt + newAmnt, curItm)
+      let curAmnt = inv[i][0]
+      let newAmnt = inv[i + 1][0]
+      inv.push([curAmnt + newAmnt, curItm])
       inv.splice(i, 2)
     } else {
       i += 1

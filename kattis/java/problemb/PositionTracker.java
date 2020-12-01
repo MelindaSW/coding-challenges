@@ -1,4 +1,4 @@
-package sigma.problemb;
+package problemb;
 
 public class PositionTracker {
     private int y;
