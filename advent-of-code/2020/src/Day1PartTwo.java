@@ -4,16 +4,16 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-public class DayOnePartTwo {
+public class Day1PartTwo {
     public static void main(String[] args) {
         // Find the three entries that sum to 2020 and multiply them with eachother to get the answer
 
         List<Integer> inputs = new LinkedList<>();
         try {
-            Scanner scanner =
-                    new Scanner(
-                            new File(
-                                    "C:\\Users\\sands\\Documents\\Projects\\coding-challenges\\advent-of-code\\2020\\PuzzleInput-DayOne.txt"));
+      Scanner scanner =
+          new Scanner(
+              new File(
+                  "C:\\Users\\sands\\Documents\\Projects\\coding-challenges\\advent-of-code\\2020\\PuzzleInput-Day1.txt"));
             while (scanner.hasNext()) {
                 inputs.add(Integer.parseInt(scanner.nextLine()));
             }

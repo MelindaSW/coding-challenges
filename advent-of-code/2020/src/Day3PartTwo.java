@@ -2,9 +2,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class DayThreePartTwo {
+public class Day3PartTwo {
     public static void main(String[] args) throws FileNotFoundException {
-        String filePath = "C:\\Users\\sands\\Documents\\Projects\\coding-challenges\\advent-of-code\\2020\\PuzzleInput-DayThree.txt";
+    String filePath =
+        "C:\\Users\\sands\\Documents\\Projects\\coding-challenges\\advent-of-code\\2020\\PuzzleInput-Day3.txt";
         int[] positionsRight = {1, 3, 5, 7, 1};
         int[] down = {1, 1, 1, 1, 2};
         int[] treesPerSlope = new int[positionsRight.length];
@@ -12,7 +13,7 @@ public class DayThreePartTwo {
         for (int i = 0; i < positionsRight.length; i++) {
             Scanner scanner = new Scanner(new File(filePath));
             String firstLine = scanner.nextLine();
-            int oneGridLenght = firstLine.length();
+            int oneGridLength = firstLine.length();
             int treeCounter = 0;
             int levelsSlopedDown = 0;
             int position = positionsRight[i];
@@ -28,7 +29,7 @@ public class DayThreePartTwo {
                     if (currentLevel.charAt(position) == '#') treeCounter++;
 
                     position += positionsRight[i];
-                    if (position > oneGridLenght - 1) position = position % oneGridLenght;
+                    if (position > oneGridLength - 1) position = position % oneGridLength;
                 }
             }
             

@@ -3,17 +3,15 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-public class DayOnePartOne {
+public class Day1PartOne {
 
-    public static void main(String[] args) {
-    // Find the two entries that sum to 2020 and multiply them with eachother to get the answer
-
+  public static void main(String[] args) {
     List<Integer> inputs = new LinkedList<>();
     try {
       Scanner scanner =
           new Scanner(
               new File(
-                  "C:\\Users\\sands\\Documents\\Projects\\coding-challenges\\advent-of-code\\2020\\PuzzleInput-DayOne.txt"));
+                  "C:\\Users\\sands\\Documents\\Projects\\coding-challenges\\advent-of-code\\2020\\PuzzleInput-Day1.txt"));
       while (scanner.hasNext()) {
         inputs.add(Integer.parseInt(scanner.nextLine()));
       }
@@ -34,5 +32,4 @@ public class DayOnePartOne {
     }
     return 0;
   }
-
 }
