@@ -9,31 +9,31 @@ public class Day4PartOne {
     String filePath =
         "C:\\Users\\sands\\Documents\\Projects\\coding-challenges\\advent-of-code\\2020\\PuzzleInput-Day4.txt";
     Scanner scanner = new Scanner(new File(filePath));
-    int nrOfValidPasswords = 0;
+    int nrOfValidPassports = 0;
 
     while (scanner.hasNext()) {
-      String password = readPassword(scanner);
-      System.out.println(password);
-      if (validatePassword(password)) nrOfValidPasswords++;
+      String passport = readPassport(scanner);
+      System.out.println(passport);
+      if (validatePassport(passport)) nrOfValidPassports++;
     }
-    System.out.println(nrOfValidPasswords);
+    System.out.println(nrOfValidPassports);
     scanner.close();
   }
 
-  static String readPassword(Scanner scanner) {
-    StringBuilder password = new StringBuilder();
+  static String readPassport(Scanner scanner) {
+    StringBuilder passport = new StringBuilder();
     while (true) {
       String line = scanner.hasNextLine() ? scanner.nextLine() : "";
       if (line.equals("")) {
-        return password.toString();
+        return passport.toString();
       }
-      password.append(line).append(" ");
+      passport.append(line).append(" ");
     }
   }
 
-  static boolean validatePassword(String password) {
+  static boolean validatePassport(String password) {
     String[] expectedFields = {"byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"};
-    Map<String, String> fields = mapPasswordFields(password);
+    Map<String, String> fields = passportFieldsToHashMap(password);
     boolean isValid = true;
     for (String expectedField : expectedFields) {
       if (!fields.containsKey(expectedField)) {
@@ -44,13 +44,13 @@ public class Day4PartOne {
     return isValid;
   }
 
-  static Map<String, String> mapPasswordFields(String password) {
-    Map<String, String> passwordFields = new HashMap<>();
+  static Map<String, String> passportFieldsToHashMap(String password) {
+    Map<String, String> passportFields = new HashMap<>();
     String[] pwd = password.split(" ");
     for (String field : pwd) {
       String[] keyValue = field.split(":");
-      passwordFields.put(keyValue[0], keyValue[1]);
+      passportFields.put(keyValue[0], keyValue[1]);
     }
-    return passwordFields;
+    return passportFields;
   }
 }
