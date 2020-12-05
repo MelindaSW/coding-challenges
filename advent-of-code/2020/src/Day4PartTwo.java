@@ -45,6 +45,7 @@ public class Day4PartTwo {
     return isValid;
   }
 
+  // This could really be refactored a bit nicer - to be dealt with some day
   static boolean validatePassportValues(Map<String, String> passport) {
     try {
       int byr = Integer.parseInt(passport.get("byr"));
