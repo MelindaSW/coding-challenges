@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 import java.util.Scanner;
-//https://open.kattis.com/problems/datum
+// https://open.kattis.com/problems/datum
 
 public class Datum {
 

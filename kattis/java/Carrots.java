@@ -1,4 +1,4 @@
-//https://open.kattis.com/problems/carrots
+// https://open.kattis.com/problems/carrots
 import java.util.Scanner;
 
 public class Carrots {
@@ -15,6 +15,5 @@ public class Carrots {
     }
 
     System.out.println(nrOfProbelmsSolved);
-
   }
 }

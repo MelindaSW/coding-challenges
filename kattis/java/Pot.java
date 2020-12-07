@@ -9,7 +9,7 @@ public class Pot {
     for (int i = 0; i < nrOfValues; i++) {
       String value = scanner.nextLine();
       double nrToAdd = Double.parseDouble(value.substring(0, value.length() - 1));
-      double pow =  Double.parseDouble(value.substring(value.length() - 1));
+      double pow = Double.parseDouble(value.substring(value.length() - 1));
       result += Math.pow(nrToAdd, pow);
     }
     System.out.println(result);
